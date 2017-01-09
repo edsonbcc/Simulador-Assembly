@@ -27,8 +27,7 @@ int main(){
 		_interface::modo_indireto = false; // false
     arquivo *arq;
     arq = new arquivo("codigo_binario.txt");
-    //instrucoes *inst;
-    //inst = new instrucoes("instrucoes_att.txt", "registradores_att.txt");
+    
     _interface *inter;
     inter = new _interface();
     Memoria *memoria;
@@ -36,20 +35,12 @@ int main(){
     processador *proc;
     proc = new processador(inter, memoria);
     analisador::poe_na_memoria(memoria,arq->get_linhas());
-//    proc->fetch_processador();
-//    memoria->fetch_memoria();
-//    proc->decodifica();
-//    proc->fetch_processador();
-//    memoria->fetch_memoria();
-//    proc->decodifica();
+
 	
     proc->faz_ciclos();
     console *cons;
     cons = new console();
-//    _interface *inter;
-//    inter = new _interface();
-//    inter->escreve_console(cons, "oii");
-//    inter->display_direto(cons, proc->zipa_dados());
+
 
 	cin.ignore();
 	getchar();
