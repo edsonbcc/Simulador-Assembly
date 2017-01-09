@@ -1,0 +1,9 @@
+zero* 0
+max* 127
+inicio
+mov ax 7
+store [10] ax
+mov dx 0
+fim
+
+
